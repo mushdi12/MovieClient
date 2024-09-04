@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane fx:id="help_label" prefHeight="726.0" prefWidth="1370.0" style="-fx-background-color: grey;"
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="frontend.MainController">
+    <children>
+        <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="51.0" layoutY="86.0" prefHeight="381.0"
+                    prefWidth="1310.0" AnchorPane.bottomAnchor="245.0" AnchorPane.leftAnchor="20.0"
+                    AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="100.0">
+            <content>
+                <TableView fx:id="table" maxHeight="477.0" maxWidth="1341.0" minHeight="268.0" minWidth="0.0"
+                           prefHeight="379.0" prefWidth="1279.0">
+                    <columns>
+                        <TableColumn fx:id="idColumn" prefWidth="43.0" text="id"/>
+                        <TableColumn fx:id="nameColumn" prefWidth="62.0" text="name"/>
+                        <TableColumn fx:id="coordXColumn" prefWidth="64.0" text="coord X"/>
+                        <TableColumn fx:id="coordYColumn" prefWidth="63.0" text="coord Y"/>
+                        <TableColumn fx:id="creationColumn" prefWidth="99.0" text="release_date"/>
+                        <TableColumn fx:id="oscar_column" prefWidth="99.0" text="oscar_count"/>
+                        <TableColumn fx:id="genreColumn" prefWidth="57.0" text="genre"/>
+                        <TableColumn fx:id="mpaaRatingColumn" prefWidth="108.0" text="mpaa_rating"/>
+                        <TableColumn fx:id="directorColumn" prefWidth="110.0" text="director_name"/>
+                        <TableColumn fx:id="birthdayColumn" prefWidth="96.0" text="birthday"/>
+                        <TableColumn fx:id="eyeColumn" prefWidth="84.0" text="eye_color"/>
+                        <TableColumn fx:id="hairColumn" prefWidth="85.0" text="hair_color"/>
+                        <TableColumn fx:id="nationalityColumn" prefWidth="88.0" text="nationality"/>
+                        <TableColumn fx:id="loc_xColumn" prefWidth="59.0" text="loc_x"/>
+                        <TableColumn fx:id="loc_yColumn" minWidth="0.0" prefWidth="86.0" text="loc_y"/>
+                        <TableColumn fx:id="loc_zColumn" minWidth="0.0" prefWidth="104.0" text="loc_z"/>
+                    </columns>
+                </TableView>
+            </content>
+        </ScrollPane>
+        <Button fx:id="avg_button" layoutX="20.0" layoutY="566.0" mnemonicParsing="false" onAction="#goAvg"
+                prefHeight="26.0" prefWidth="186.0" text="Avg Oscars"/>
+        <Button fx:id="remove_button" layoutX="20.0" layoutY="612.0" mnemonicParsing="false" onAction="#goRemove"
+                prefHeight="26.0" prefWidth="141.0" text="Remove"/>
+        <Button fx:id="clear_button" layoutX="510.0" layoutY="663.0" mnemonicParsing="false" onAction="#goClear"
+                prefHeight="26.0" prefWidth="141.0" text="CLear"/>
+        <Button fx:id="remove_by_oscar_button" layoutX="20.0" layoutY="663.0" mnemonicParsing="false" onAction="#goRBO"
+                prefHeight="26.0" prefWidth="141.0" text="Remove By Oscar"/>
+        <Button fx:id="update_button" layoutX="261.0" layoutY="612.0" mnemonicParsing="false" onAction="#goUpdate"
+                prefHeight="26.0" prefWidth="141.0" text="Update"/>
+        <Button fx:id="insert_button" layoutX="261.0" layoutY="663.0" mnemonicParsing="false" onAction="#goInsert"
+                prefHeight="26.0" prefWidth="141.0" text="Insert"/>
+        <Button fx:id="add_button" layoutX="510.0" layoutY="612.0" mnemonicParsing="false" onAction="#goAdd"
+                prefHeight="26.0" prefWidth="141.0" text="Add"/>
+        <Label fx:id="avg_field" layoutX="209.0" layoutY="566.0" prefHeight="26.0" prefWidth="74.0" text=" "
+               textAlignment="CENTER"/>
+        <Button fx:id="genre_button" layoutX="293.0" layoutY="566.0" mnemonicParsing="false" onAction="#goGenres"
+                prefHeight="26.0" prefWidth="141.0" text="Genres"/>
+        <Label fx:id="genre_field" layoutX="465.0" layoutY="566.0" prefHeight="26.0" prefWidth="186.0" text=" "
+               textAlignment="CENTER"/>
+        <TextField fx:id="field_remove" layoutX="184.0" layoutY="612.0" prefHeight="26.0" prefWidth="50.0"
+                   promptText="Index"/>
+        <Label fx:id="user_name" layoutX="20.0" layoutY="55.0" prefHeight="26.0" prefWidth="241.0"
+               textAlignment="CENTER">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Text fx:id="user_field_2" layoutX="20.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User :"
+              wrappingWidth="118.13000106811523"/>
+        <TextField fx:id="field_remove_oscar" layoutX="184.0" layoutY="663.0" prefHeight="26.0" prefWidth="50.0"
+                   promptText="Oscar"/>
+        <Button fx:id="reload_button" layoutX="1210.0" layoutY="57.0" mnemonicParsing="false" onAction="#reload"
+                prefHeight="26.0" prefWidth="111.0" text="Reload"/>
+        <TextField fx:id="insert_index" layoutX="421.0" layoutY="663.0" prefHeight="26.0" prefWidth="50.0"
+                   promptText="Index"/>
+        <TextField fx:id="update_index" layoutX="421.0" layoutY="612.0" prefHeight="26.0" prefWidth="50.0"
+                   promptText="Index"/>
+        <Label fx:id="qwerty" layoutX="20.0" layoutY="506.0" prefHeight="33.0" prefWidth="630.0"
+               style="-fx-background-color: white;" text=" " textAlignment="CENTER">
+            <font>
+                <Font size="23.0"/>
+            </font>
+        </Label>
+        <Button fx:id="map_2" layoutX="685.0" layoutY="508.0" mnemonicParsing="false" onAction="#go2DMAP"
+                prefHeight="63.0" prefWidth="105.0" text="2D MAP"/>
+        <Button fx:id="nap_3" layoutX="830.0" layoutY="508.0" mnemonicParsing="false" onAction="#go3DMAP"
+                prefHeight="63.0" prefWidth="105.0" text="3D MAP"/>
+        <ChoiceBox fx:id="change" layoutX="1171.0" layoutY="18.0" onAction="#changeL" prefWidth="150.0"/>
+        <Button fx:id="help_button" layoutX="689.0" layoutY="612.0" mnemonicParsing="false" onAction="#goHelp"
+                prefHeight="26.0" prefWidth="141.0" text="Help"/>
+
+
+    </children>
+</AnchorPane>

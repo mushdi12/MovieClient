@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0"
+            prefWidth="884.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="frontend.UpdateController">
+    <children>
+        <Text fx:id="m_f" layoutX="28.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie's fields"
+              wrappingWidth="218.21200561523438"/>
+        <TextField fx:id="movie_name" layoutX="122.0" layoutY="86.0" prefHeight="26.0" prefWidth="95.0"/>
+        <TextField fx:id="m_x" layoutX="162.0" layoutY="128.0" prefHeight="26.0" prefWidth="54.0"/>
+        <TextField fx:id="m_y" layoutX="162.0" layoutY="171.0" prefHeight="26.0" prefWidth="54.0"/>
+        <Button fx:id="movie_name_button" layoutX="26.0" layoutY="86.0" mnemonicParsing="false"
+                onAction="#checkMovieName" prefHeight="26.0" prefWidth="76.0" text="Name"/>
+        <Text fx:id="d_f" layoutX="371.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Director's fields"
+              wrappingWidth="251.97799682617188"/>
+        <Button fx:id="m_x_button" layoutX="27.0" layoutY="128.0" mnemonicParsing="false" onAction="#checkCX"
+                prefHeight="26.0" prefWidth="129.0" text="Coordinate X:"/>
+        <Button fx:id="oscar_button" layoutX="27.0" layoutY="212.0" mnemonicParsing="false" onAction="#checkOscar"
+                prefHeight="26.0" prefWidth="129.0" text="Oscar's Counts"/>
+        <Button fx:id="genre_button" layoutX="28.0" layoutY="249.0" mnemonicParsing="false" text="Genre"/>
+        <Button fx:id="npa_button" layoutX="26.0" layoutY="292.0" mnemonicParsing="false" prefHeight="26.0"
+                prefWidth="56.0" text="MPA"/>
+        <Button fx:id="d_name_button" layoutX="251.0" layoutY="86.0" mnemonicParsing="false"
+                onAction="#checkDirectorName" prefHeight="26.0" prefWidth="76.0" text="Name"/>
+        <TextField fx:id="d_name" layoutX="354.0" layoutY="86.0" prefHeight="26.0" prefWidth="91.0"/>
+        <ComboBox fx:id="eye" layoutX="582.0" layoutY="86.0" prefHeight="26.0" prefWidth="91.0"/>
+        <ComboBox fx:id="genre_combo" layoutX="101.0" layoutY="249.0" prefHeight="26.0" prefWidth="118.0"/>
+        <Button fx:id="year_button" layoutX="249.0" layoutY="141.0" mnemonicParsing="false" onAction="#checkYear"
+                prefHeight="26.0" prefWidth="80.0" text="Year"/>
+        <TextField fx:id="year" layoutX="354.0" layoutY="141.0" prefHeight="26.0" prefWidth="91.0"/>
+        <Button fx:id="month_button" layoutX="249.0" layoutY="184.0" mnemonicParsing="false" onAction="#checkMonth"
+                prefHeight="26.0" prefWidth="80.0" text="Month"/>
+        <TextField fx:id="month" layoutX="354.0" layoutY="184.0" prefHeight="26.0" prefWidth="91.0"/>
+        <Button fx:id="day_button" layoutX="249.0" layoutY="225.0" mnemonicParsing="false" onAction="#checkDay"
+                prefHeight="26.0" prefWidth="80.0" text="Day"/>
+        <TextField fx:id="day" layoutX="354.0" layoutY="225.0" prefHeight="26.0" prefWidth="91.0"/>
+        <Button fx:id="hour_button" layoutX="249.0" layoutY="262.0" mnemonicParsing="false" onAction="#checkHour"
+                prefHeight="26.0" prefWidth="80.0" text="Hour"/>
+        <TextField fx:id="hour" layoutX="354.0" layoutY="262.0" prefHeight="26.0" prefWidth="91.0"/>
+        <Button fx:id="minute_button" layoutX="249.0" layoutY="305.0" mnemonicParsing="false" onAction="#checkMin"
+                prefHeight="26.0" prefWidth="80.0" text="Minute"/>
+        <TextField fx:id="minute" layoutX="354.0" layoutY="305.0" prefHeight="26.0" prefWidth="91.0"/>
+        <Button fx:id="second_button" layoutX="249.0" layoutY="351.0" mnemonicParsing="false" onAction="#checkSec"
+                prefHeight="26.0" prefWidth="80.0" text="Second"/>
+        <TextField fx:id="second" layoutX="354.0" layoutY="351.0" prefHeight="26.0" prefWidth="91.0"/>
+        <Button fx:id="eye_button" layoutX="474.0" layoutY="86.0" mnemonicParsing="false" text="Color Eye"/>
+        <Button fx:id="hair_button" layoutX="472.0" layoutY="128.0" mnemonicParsing="false" text="Color Hair"/>
+        <ComboBox fx:id="hair" layoutX="582.0" layoutY="128.0" prefHeight="26.0" prefWidth="91.0"/>
+        <Button fx:id="nationality_button" layoutX="470.0" layoutY="171.0" mnemonicParsing="false" prefHeight="26.0"
+                prefWidth="152.0" text="Nationality"/>
+        <ComboBox fx:id="nationality" layoutX="665.0" layoutY="172.0" prefHeight="26.0" prefWidth="91.0"/>
+        <Button fx:id="m_y_button" layoutX="27.0" layoutY="171.0" mnemonicParsing="false" onAction="#checkCY"
+                prefHeight="26.0" prefWidth="129.0" text="Coordinate Y:"/>
+        <TextField fx:id="oscar" layoutX="162.0" layoutY="212.0" prefHeight="26.0" prefWidth="54.0"/>
+        <ComboBox fx:id="mpa_combo" layoutX="101.0" layoutY="292.0" prefHeight="26.0" prefWidth="118.0"/>
+        <Text fx:id="b_f" layoutX="295.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birthday"
+              wrappingWidth="152.0"/>
+        <Button fx:id="d_x_button" layoutX="470.0" layoutY="212.0" mnemonicParsing="false" onAction="#checkLX"
+                prefHeight="26.0" prefWidth="129.0" text="Coordinate X:"/>
+        <Button fx:id="d_y_button" layoutX="470.0" layoutY="249.0" mnemonicParsing="false" onAction="#checkLY"
+                prefHeight="26.0" prefWidth="129.0" text="Coordinate Y:"/>
+        <Button fx:id="d_z_button" layoutX="470.0" layoutY="292.0" mnemonicParsing="false" onAction="#checkLZ"
+                prefHeight="26.0" prefWidth="129.0" text="Coordinate Z:"/>
+        <TextField fx:id="d_x" layoutX="619.0" layoutY="212.0" prefHeight="26.0" prefWidth="54.0"/>
+        <TextField fx:id="d_y" layoutX="619.0" layoutY="249.0" prefHeight="26.0" prefWidth="54.0"/>
+        <TextField fx:id="d_z" layoutX="619.0" layoutY="292.0" prefHeight="26.0" prefWidth="54.0"/>
+        <Button fx:id="finish_button" layoutX="515.0" layoutY="338.0" mnemonicParsing="false" onAction="#finish"
+                prefHeight="26.0" prefWidth="144.0" text="ОК"/>
+        <Text fx:id="y_9" layoutX="354.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year &gt; 1900"/>
+    </children>
+</AnchorPane>

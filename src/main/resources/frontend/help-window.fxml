@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="176.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="frontend.HelpController">
+    <children>
+        <ScrollPane layoutX="-1.0" prefHeight="174.0" prefWidth="600.0">
+            <content>
+                <Label fx:id="help" alignment="TOP_LEFT" prefHeight="181.0" prefWidth="1252.0"/>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

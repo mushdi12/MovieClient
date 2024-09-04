@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="562.0" maxWidth="723.0" minHeight="449.0" minWidth="400" prefHeight="562.0" prefWidth="693.0"
+            style="-fx-background-color: #1d242f;" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.LoginController">
+    <children>
+        <!-- ChoiceBox for language selection -->
+        <ChoiceBox fx:id="change" layoutX="23.0" layoutY="20.0" onAction="#changeL" prefHeight="26.0"
+                   prefWidth="118.0"/>
+
+        <!-- Welcome Text -->
+        <Text fx:id="welcome" fill="#ffa600" layoutX="54.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Welcome!" wrappingWidth="246.0">
+            <font>
+                <Font size="25.0"/>
+            </font>
+        </Text>
+
+        <!-- Your Name Text -->
+        <Text fx:id="field_name" fill="WHITE" layoutX="54.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Your name" wrappingWidth="266.0">
+            <font>
+                <Font size="25.0"/>
+            </font>
+        </Text>
+
+        <!-- Your Password Text -->
+        <Text fx:id="field_password" fill="WHITE" layoutX="54.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Your password" wrappingWidth="266.0">
+            <font>
+                <Font size="25.0"/>
+            </font>
+        </Text>
+
+        <!-- Error Label -->
+        <Label fx:id="error_field" layoutX="54.0" layoutY="340.0" prefHeight="34.0" prefWidth="266.0" textFill="RED"/>
+
+        <!-- Registration Button -->
+        <Button fx:id="reg_button" layoutX="54.0" layoutY="494.0" mnemonicParsing="false" onAction="#goReg"
+                prefHeight="37.0" prefWidth="266.0"
+                style="-fx-border-radius: 5; -fx-background-radius: 8; -fx-background-color: orange; -fx-text-fill: #1d242f;"
+                text="Create an account" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+            >
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+
+        <!-- Username TextField -->
+        <TextField fx:id="log_user_name" layoutX="54.0" layoutY="187.0" prefHeight="47.0" prefWidth="266.0"
+                   style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 5; -fx-background-radius: 8;">
+            <font>
+                <Font size="21.0"/>
+            </font>
+        </TextField>
+
+        <!-- Password TextField -->
+        <PasswordField fx:id="log_user_password" layoutX="54.0" layoutY="293.0" prefHeight="47.0" prefWidth="266.0"
+                       style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 5; -fx-background-radius: 8;">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </PasswordField>
+
+        <!-- Front Image -->
+        <ImageView fx:id="front" fitHeight="562.0" fitWidth="322.0" layoutX="371.0" layoutY="-2.0" pickOnBounds="true">
+            <image>
+                <Image url="@images/yamp3.jpg"/>
+            </image>
+        </ImageView>
+
+        <!-- Login Button -->
+        <Button fx:id="login_button" layoutX="54.0" layoutY="389.0" mnemonicParsing="false" onAction="#goMain"
+                prefHeight="56.0" prefWidth="266.0"
+                style="-fx-border-radius: 5; -fx-background-radius: 8; -fx-background-color: orange;" text="LOG IN"
+                textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

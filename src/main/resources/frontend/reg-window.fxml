@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="562.0" maxWidth="723.0" minHeight="449.0" minWidth="400" prefHeight="562.0" prefWidth="693.0"
+            style="-fx-background-color: #1d242f;" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.RegController">
+    <children>
+        <TextField fx:id="log_user_name" layoutX="54.0" layoutY="184.0" prefHeight="47.0" prefWidth="266.0"
+                   style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 5; -fx-background-radius: 8;">
+            <font>
+                <Font size="21.0"/>
+            </font>
+        </TextField>
+        <PasswordField fx:id="log_user_password" layoutX="54.0" layoutY="281.0" prefHeight="47.0" prefWidth="266.0"
+                       style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 5; -fx-background-radius: 8;">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </PasswordField>
+        <ImageView fx:id="front" fitHeight="562.0" fitWidth="322.0" layoutX="371.0" layoutY="-2.0" pickOnBounds="true">
+            <image>
+                <Image url="@images/yamp3.jpg"/>
+            </image>
+        </ImageView>
+        <Button fx:id="log_in_reg_button" layoutX="54.0" layoutY="387.0" mnemonicParsing="false" onAction="#goMain"
+                prefHeight="56.0" prefWidth="266.0"
+                style="-fx-border-radius: 5; -fx-background-radius: 8; -fx-background-color: orange;" text="LOG IN"
+                textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <Text fx:id="create_acc" fill="#ffa600" layoutX="54.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Create account" wrappingWidth="305.0">
+            <font>
+                <Font size="25.0"/>
+            </font>
+        </Text>
+        <Button fx:id="back_button" layoutX="54.0" layoutY="490.0" mnemonicParsing="false" onAction="#goBack"
+                prefHeight="35.0" prefWidth="266.0"
+                style="-fx-border-radius: 5; -fx-background-radius: 8; -fx-background-color: orange;" text="BACK"
+                textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <Text fx:id="field_name" fill="WHITE" layoutX="54.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Your login" wrappingWidth="266.0">
+            <font>
+                <Font size="26.0"/>
+            </font>
+        </Text>
+        <Text fx:id="field_password" fill="WHITE" layoutX="56.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Your password" wrappingWidth="266.0">
+            <font>
+                <Font size="26.0"/>
+            </font>
+        </Text>
+        <Label fx:id="error_field" layoutX="56.0" layoutY="328.0" prefHeight="35.0" prefWidth="266.0" textFill="RED"/>
+    </children>
+</AnchorPane>

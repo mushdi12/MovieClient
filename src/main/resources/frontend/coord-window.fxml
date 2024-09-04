@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.Pane?>
+<Pane prefHeight="876.0" prefWidth="1292.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="frontend.Map2Controller">
+    <Canvas fx:id="canvas" height="844.0" layoutX="41.0" layoutY="22.0" width="1200.0"/>
+</Pane>
